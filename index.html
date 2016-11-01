@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Address Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      .map {
+        width: 100%;
+        height: 400px ;
+      }
+      .address{
+        width:100%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="address-section">
+      <textarea class="address" rows=5 >Mumbai India</textarea>
+      <div class="map"></div>
+    </div>
+
+
+    <!-- latest jquery from cdn -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- our awesome address map plugin -->
+    <script src="address-map.js"></script>
+
+    <!-- google maps with your google api key & callback function -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&callback=$.initAddressMap"></script>
+    
+  </body>
+</html>
+
+
