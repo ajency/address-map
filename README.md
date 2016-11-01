@@ -6,7 +6,7 @@ jquery<br>
 google maps api with key
 
 ### Initialization
-$('.address-section').addressMap() <br>
+    $('.address-section').addressMap() <br>
 Note: if you use the callback $.initAddressMap for google api as given below in the js section you dont need to initialize the addressMap plugin. The callback does it for you. 
 If you are using this initialization, you can remove the callback.
 
